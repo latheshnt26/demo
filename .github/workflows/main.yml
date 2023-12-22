@@ -1,0 +1,11 @@
+name: Simple Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Message
+        run: echo "Hello, GitHub Actions!"
